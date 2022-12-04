@@ -1,1 +1,1 @@
-https://uscwebdev.github.io/itp104-submissions-zenyahsu/
+https://uscwebdev-itp104-zenyahsu
