@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Zenya Hsu | Form Page</title>
+<style>
+
+body{
+	margin: 0;
+	background-color: #ccd8c0;
+}
+#header{
+	background-color: #d8bfd8;
+	padding: 10px;
+}
+h1{
+	text-align: center;
+	color: #9e619e;
+	text-shadow: 3px 3px 0px #ccd8c0;;
+}
+#gallery{
+	text-align: center;
+	padding: 30px;
+}
+#checkered-mug{
+	width: 500px;
+	height: 500px;
+	border: 1px solid white;
+}
+#wrapper{
+	border: 1px solid white;
+	width: 500px;
+	background-color: #ecdfec;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+h2{
+	text-align: center;
+	color: #9e619e;
+}
+#top-row{
+	border: 1px solid white;
+}
+#middle-row{
+	border: 1px solid white;
+}
+#bottom-row{
+	border: 1px solid white;
+}
+.form-row{
+	padding: 10px 0px;
+}
+.main-label{
+	width: 16%;
+	float: left;
+	padding-left: 10px;
+}
+.secondary-label{
+	width: 40%;
+	float: left;
+	padding-left: 10px;
+}
+#question-text{
+	width: 50%;
+}
+button{
+	padding: 10px 10px;
+	margin: 0 auto;
+}
+#buttons{
+	text-align: center;
+}
+#submit{
+	background-color: #ccd8c0;
+}
+#check{
+	text-align: center;
+	padding: 8px;
+}
+#footer{
+	background-color: #d8bfd8;
+	padding: 10px;
+	text-align: center;
+	color: #9e619e;
+}
+
+
+</style>
+</head>
+
+<body>
+<div id="header">
+	<h1>Checkered Mugs</h1>
+</div>
+
+<div id="gallery">
+	<img id="checkered-mug" src="img/checkered-mug.jpeg" alt="Mug">
+</div>
+
+<div id="wrapper">
+		<h2>Order Form</h2>
+
+	<form action="confirmation.html">
+	<div id="top-row">
+		<div class="form-row">
+				<label class="main-label" for="first-name">First Name:</label>
+				<input id="first-name" type="text" placeholder="Zenya">
+			</div>
+
+		<div class="form-row">
+				<label class="main-label" for="last-name">Last Name:</label>
+				<input id="last-name" type="text" placeholder="Hsu">
+			</div>
+
+			<div class="form-row">
+				<label class="main-label" for="email">Email:</label>
+				<input id="email" type="email" placeholder="zhsu@usc.edu">
+			</div>
+
+		<div class="form-row">
+				<label class="main-label" for="phone">Phone:</label>
+				<input id="phone" type="tel" placeholder="(123) 123-1234">
+			</div>
+
+		<div class="form-row">
+			<label class="main-label">Size:</label>
+			<label>
+				<input id="12oz" type="radio" name="size" value="12oz">12oz</label>
+			<label>
+				<input id="16oz" type="radio" name="size" value="16oz">16oz</label>
+			<label>
+				<input id="24oz" type="radio" name="size" value="24oz">24oz</label>
+		</div>
+
+		<div class="form-row">
+			<label class="main-label">Colors:</label> <!--checkbox(3)-->
+			<label>
+				<input id="1" type="checkbox" name="cb1" value="Beige">Beige</label>
+			<label>
+				<input id="2" type="checkbox" name="cb2" value="Sage">Sage</label>
+			<label>
+				<input id="3" type="checkbox" name="cb3" value="Yellow">Yellow</label>
+			<label>
+				<input id="4" type="checkbox" name="cb4" value="Black">Black</label>
+		</div>
+	</div>
+
+	<div id="middle-row">
+		<div class="form-row">
+				<label class="secondary-label" for="dropdown">Question Type:</label> 
+				<select id="dropdown" name="dropdown">
+					<option value="General">General</option>
+					<option value="Shipping/Returns">Shipping/Returns</option>
+					<option value="Pricing">Pricing</option>
+				</select>
+			</div>
+
+			<div class="form-row">
+				<label class="secondary-label" for="question-text">What is your question?</label>
+				<textarea id="question-text" placeholder="Enter your question here :)"></textarea>
+			</div>
+	</div>
+
+	<label id="check">
+		<input id="terms" type="checkbox" name="accept" value="Accept" required>Accept Terms and Conditions</label>
+		
+		<div class="form-row">
+			<div id="buttons">
+				<button id="submit" type="submit">Order</button>
+				<button type="reset">Reset</button>
+			</div>
+		</div>	
+	</form>
+</div>
+
+<div id="footer">
+	<p>Zenya Hsu Ceramic Mug Co. &copy; 2022</p>
+</div>
+
+</body>
+</html>

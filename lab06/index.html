@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Zenya Hsu | Simple Photo Gallery</title>
+<style>
+
+body{
+	background-color: #c71585;
+}
+
+#content{
+	background-image: url('img/aura.png');
+	width: 1000px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position:  center;
+	margin: 0 auto;
+}
+
+h1{
+	font-size: 50px;
+	padding-top: 45px;
+	text-align: center;
+	margin-bottom: 10px;
+	color: #ff8c00;
+	text-shadow: 2px 2px 0px white;
+}
+
+#gallery{
+	padding-left: 45px;
+	height: 690px;
+}
+
+.thumbnail{
+	 width:260px;
+	 height: 260px;
+	 float: left;
+	 overflow: hidden;
+	 border: 1px solid white;
+	 margin: 20px;
+	 background-color: lightgreen;
+}
+
+.thumbnail:hover{
+		opacity: 1;
+	}
+
+.thumbnail-container{
+	float: left;
+	text-align: center;
+}
+
+.thumbnail-container p{
+	visibility: hidden;
+	color: white;
+	font-size: 20px;
+}
+
+.thumbnail-container:hover p{
+	visibility: visible;
+	display: block;
+}
+
+.landscape{
+	width: 260px;
+	height: 100%;
+}
+
+.portrait{
+	width: 100%;
+	height: 260px;
+}
+
+.clearfloat{
+	clear: both;
+}
+
+#photo-container{
+	background-color: aliceblue;
+}
+
+</style>
+</head>
+<body>
+
+<div id="content">
+
+	<h1>Film Photos Summer 2022</h1>
+
+<div id="gallery">
+<div id="photo-container">
+	<div class="thumbnail-container">
+		<div class="thumbnail">
+			<img class="portrait" src="img/dtla.jpg" alt="DTLA">
+		</div>	
+		<p>Downtown Los Angeles</p>
+	</div>
+
+	<div class="thumbnail-container">
+		<div class="thumbnail">
+			<img class="landscape" src="img/bixby.jpg" alt="Bixby Bridge">
+		</div>
+		<p>Bixby Bridge</p>
+	</div>
+
+	<div class="thumbnail-container">
+		<div class="thumbnail">
+			<img class="landscape" src="img/gettyvilla.jpg" alt="Getty Villa">
+		<div class="clearfloat"></div>
+		</div>
+		<p>Getty Villa Museum</p>
+	</div>
+
+	<div class="thumbnail-container">
+		<div class="thumbnail">
+			<img class="landscape" src="img/seattle.jpg" alt="Glossier in Seattle">
+		</div>
+		<p>Glossier in Seattle</p>
+	</div>
+
+	<div class="thumbnail-container">
+		<div class="thumbnail">
+			<img class="landscape" src="img/cannon.jpg" alt="Cannon Beach">
+		</div>
+		<p>Cannon Beach</p>
+	</div>
+
+	<div class="thumbnail-container">
+		<div class="thumbnail">
+			<img class="portrait" src="img/centralpark.jpg" alt="Central Park">
+		</div>
+		<p>Central Park</p>
+	</div>	
+</div>
+</div>
+</div> <!-- content div closed -->
+
+
+</body>
+</html>

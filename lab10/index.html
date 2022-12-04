@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Zenya Hsu | Animation Media</title>
+
+<style>
+	body{
+		background-image: url('img/winter.jpeg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: top;
+		margin: 0;
+		height: auto;
+	}
+
+	h1{
+		text-align: center;
+		font-family: "Winterland",serif;
+		font-size: 80px;
+		margin-top: 20px;
+		color: #4785b8;
+	}
+	#skater{
+		position: relative;
+		top: 140px;
+		animation: moveskater 7s infinite;
+	}
+	@keyframes moveskater{
+		0% {left: 20px;}
+		50%{left: 1000px;}
+		75%{left: 100px;}
+		100%{left: 200px;}
+	}
+	@font-face{
+		font-family: "Winterland";
+		src: url('font/winterland.ttf');
+	}
+	#snow{
+		position: absolute;
+		top: 0px;
+		bottom: 0px;
+		left: 0px;
+		right: 0px;
+		width: 100%;
+		height: auto;
+	}
+	#bubble{
+		position: relative;
+		bottom: 180px;
+		right: 60px;
+		left: 20px;
+		width: 150px;
+		height: auto;
+		animation: movebubble 7s infinite;
+	}
+	@keyframes movebubble{
+		0% {left: 0px;}
+		50%{left: 900px;}
+		75%{left: 100px;}
+		100%{left: 200px;}
+	}
+
+</style>
+</head>
+<body>
+	<h1>Animation</h1>
+
+	<img src="img/snow.gif" alt="Snow Falling" id="snow">
+
+	<img src="img/skater.gif" alt="Ice Skater" id="skater">
+
+	<img src="img/yay.gif" alt="Speech Bubble" id="bubble">
+
+</body>
+</html>
